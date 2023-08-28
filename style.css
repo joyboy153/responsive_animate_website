@@ -111,7 +111,7 @@ nav .logo a img{
     cursor: pointer;
     display: none;
 }
-.mobile_menu{
+.mobile_menu {
     position: fixed;
     top: 0;
     right: 0;
@@ -121,15 +121,17 @@ nav .logo a img{
     height: 100%;
     z-index: 99;
     border-radius: 0;
-    transition: all .3s cubic-bezier(0.78,0.135,0.15,0.86);
+    transition: all .3s cubic-bezier(0.78, 0.135, 0.15, 0.86);
     transform: translateX(100%);
     display: none;
 }
-.mobile-menu.active{
+
+.mobile_menu.active {
     transform: translateX(0%);
     right: 0;
-    display: none;
+    display: block;
 }
+
 .mobile_menu .mobile_nav{
     position: absolute;
     left: 0;
@@ -167,7 +169,7 @@ nav .logo a img{
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 10px;
+    z-index: 10;
     transform: rotate(0deg);
     transition: all .5s ease;
 }
@@ -285,15 +287,15 @@ nav .logo a img{
 }
 @keyframes slide-up{
     0%{
-        opacity: 1;
+        opacity: 0;
         transform: translateY(0%);
     }
     55%{
-        opacity: 1;
+        opacity: 0;
         transform: translateY(100%);
     }
     100%{
-        opacity: 1;
+        opacity: 0;
         transform: translateY(-110%);
     }
 }
@@ -570,7 +572,8 @@ nav .logo a img{
         margin: 20px 0 20px 0;
         padding: 12px 17px;
     }
-    .mobile_menu{
+    .mobile_menu,
+    .mobile-menu.active{
     display: block;
     }
     .OC_btn{
