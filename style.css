@@ -370,6 +370,7 @@ nav .logo a img{
 .banner_content .cnt_img .box{
     display: block;
     position: relative;
+    top: -70px;
 }
 .banner_content .cnt_img .banner_img{
     position: relative;
